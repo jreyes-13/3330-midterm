@@ -1,0 +1,418 @@
+/* ================================
+   CSCI 3342 — Midterm Study Guide
+   ================================ */
+
+:root {
+    --bg-dark: #0f172a;
+    --bg-darker: #020617;
+    --card: #ffffff;
+    --text: #1e293b;
+    --muted: #64748b;
+    --border: #e2e8f0;
+
+    --html: #f97316;
+    --css: #3b82f6;
+    --js: #eab308;
+    --other: #8b5cf6;
+
+    --accent: #facc15;
+    --code-bg: #f1f5f9;
+    --shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+    margin: 0;
+    background:
+        radial-gradient(circle at 10% 10%, rgba(59, 130, 246, 0.15), transparent 30%),
+        radial-gradient(circle at 90% 20%, rgba(250, 204, 21, 0.12), transparent 30%),
+        linear-gradient(135deg, #e2e8f0, #f8fafc);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+
+/* ================================
+   HEADER
+   ================================ */
+
+header {
+    background:
+        linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(30, 41, 59, 0.96)),
+        radial-gradient(circle at top right, #facc15, transparent 30%);
+
+    color: white;
+    padding: 45px 20px 40px;
+    text-align: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    border-bottom: 3px solid var(--accent);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #facc15;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 1.1rem;
+    color: #cbd5e1;
+}
+
+
+/* ================================
+   MAIN CONTAINER
+   ================================ */
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+    padding: 45px 0;
+}
+
+
+/* ================================
+   SECTION CARDS
+   ================================ */
+
+.section {
+    position: relative;
+
+    background: rgba(255, 255, 255, 0.96);
+    padding: 30px 35px;
+    margin-bottom: 30px;
+
+    border-radius: 16px;
+    border: 1px solid rgba(226, 232, 240, 0.9);
+
+    box-shadow: var(--shadow);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.16);
+}
+
+
+/* ================================
+   SECTION HEADINGS
+   ================================ */
+
+.section h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin: -30px -35px 25px;
+    padding: 18px 35px;
+
+    color: white;
+    font-size: 1.5rem;
+
+    border-radius: 16px 16px 0 0;
+    border: none;
+}
+
+
+/* HTML */
+
+.section:nth-of-type(1) h2 {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+.section:nth-of-type(1) h2::before {
+    content: "</>";
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+
+/* CSS */
+
+.section:nth-of-type(2) h2 {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.section:nth-of-type(2) h2::before {
+    content: "{ }";
+    font-family: monospace;
+}
+
+
+/* JavaScript */
+
+.section:nth-of-type(3) h2 {
+    background: linear-gradient(135deg, #facc15, #eab308);
+    color: #422006;
+}
+
+.section:nth-of-type(3) h2::before {
+    content: "JS";
+    font-family: monospace;
+    font-weight: 800;
+}
+
+
+/* Other Concepts */
+
+.section:nth-of-type(4) h2 {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.section:nth-of-type(4) h2::before {
+    content: "⚙";
+}
+
+
+/* ================================
+   LISTS
+   ================================ */
+
+ul {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+.section > ul > li {
+    margin-bottom: 14px;
+}
+
+.section > ul > li::marker {
+    color: #64748b;
+    font-weight: bold;
+}
+
+
+/* Nested lists */
+
+li ul {
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+li ul li {
+    color: #475569;
+    font-size: 0.96rem;
+}
+
+
+/* ================================
+   PARAGRAPHS
+   ================================ */
+
+.section p {
+    color: #475569;
+}
+
+.section > ul > p {
+    margin: 5px 0 5px 20px;
+    padding-left: 12px;
+
+    border-left: 3px solid #e2e8f0;
+
+    font-size: 0.95rem;
+}
+
+
+/* ================================
+   SAMPLE EXERCISES
+   ================================ */
+
+.subtopic {
+    display: inline-block;
+
+    margin-top: 25px;
+    margin-bottom: 5px;
+
+    padding: 7px 14px;
+
+    background: #fef3c7;
+    color: #92400e;
+
+    border-left: 4px solid #f59e0b;
+    border-radius: 6px;
+
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* Make sample exercise paragraphs stand out */
+
+.subtopic + p {
+    background: #f8fafc;
+
+    padding: 18px 20px !important;
+    margin: 10px 0 0;
+
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #facc15;
+
+    border-radius: 8px;
+
+    color: #334155;
+}
+
+
+/* ================================
+   CODE
+   ================================ */
+
+code {
+    font-family: "Fira Code", "Cascadia Code", Consolas, monospace;
+
+    background: #0f172a;
+    color: #facc15;
+
+    padding: 3px 7px;
+
+    border-radius: 5px;
+
+    font-size: 0.9em;
+}
+
+
+/* Code inside exercise boxes */
+
+.subtopic + p code {
+    background: #e2e8f0;
+    color: #7c3aed;
+}
+
+
+/* ================================
+   LINKS
+   ================================ */
+
+a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+
+    border-bottom: 2px solid rgba(37, 99, 235, 0.2);
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+a:hover {
+    color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    margin-top: 20px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background: var(--bg-dark);
+    color: #94a3b8;
+
+    font-size: 0.9rem;
+
+    border-top: 3px solid var(--accent);
+}
+
+footer {
+    color: #cbd5e1;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 700px) {
+
+    header {
+        position: relative;
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 94%;
+        padding: 25px 0;
+    }
+
+    .section {
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+    .section h2 {
+        margin: -25px -20px 20px;
+        padding: 16px 20px;
+
+        font-size: 1.3rem;
+    }
+
+    .section > ul > p {
+        margin-left: 5px;
+    }
+
+    .subtopic + p {
+        padding: 15px !important;
+    }
+}
+
+
+/* ================================
+   ACCESSIBILITY
+   ================================ */
+
+a:focus-visible {
+    outline: 3px solid #60a5fa;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .section {
+        transition: none;
+    }
+}

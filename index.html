@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Study Guide</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+    <h1>CSCI 3342 Web Development </h1>
+    <p>Midterm Exam Review Guide</p>
+    </header>
+
+    <div class="container">
+
+    <!-- HTML -->
+
+    <div class="section">
+    <h2>HTML</h2>
+
+   
+    <ul>
+        
+        <li>Tag anatomy (opening tag, closing tag, content)</li>
+        <p>Structural and semantic (HTML 5) markup and attributes: <a href="https://htmlcheatsheet.com/">HTML Cheat Sheet</a></p>
+        <li>Links (<code>&lt;a&gt;</code>)</li>
+        <p>Differences between an absolute and a relative HTML links </p>
+        <p>Links that automatically opens the user's default email client.</p>
+        <p>Links to bring external resources (e.g. cascading stylesheets) or scripts (e.g. JS code) into your webpage </p>
+        <li>Tables (<code>&lt;table&gt;</code>)</li>
+        <p>Columns, rows, row and column spanning</p>
+        <li>Forms (<code>&lt;form&gt;</code>)</li>
+        <p>Structure</p>
+        <p>Methods</p>
+        <p>Form Controls used for collecting user input</p>
+    
+    </ul>
+    
+    <div class="subtopic">Sample Exercise: </div>
+    <p style="padding-left: 40px;">
+        Given a starter HTML file, add an <code>&lt;article&gt;</code> element as a child of the existing <code>&lt;div&gt;</code> element with the ID <code>container</code>. Also, add the <code>class</code> attribute with the value <code>read-me</code> to the <code>&lt;article&gt;</code> element. 
+    </p>
+   
+
+    </div>
+
+    <!-- CSS -->
+
+    <div class="section">
+        <h2>CSS</h2>
+
+        <ul>
+        <li>CSS File Location : inline, head, and external.</li>
+
+        <li>Selectors
+            <ul>
+                <li>Universal selector</li>
+                <li>Element type selector</li>
+                <li>Attribute selector</li>
+                <li>ID selector</li>
+                <li>Class selector</li>
+                <li>Pseudo-class selector</li>
+            </ul>
+        </li>
+
+        <li>The Box Model
+            <ul>
+                <li>Dimensions: height, width, overflow</li>
+                <li>Appearance: border, margin and padding</li>
+                <li>Position: text align, center content and text</li>
+            </ul>
+        </li>
+
+        </ul>
+
+        <div class="subtopic">Sample Exercise: </div>
+        <p style="padding-left: 40px;">
+            Given a starter CSS file, add an CSS rule that targets the <code>&lt;article&gt;</code> element with the ID <code>container</code>. Set its <code>font-size</code> property to <code>25px</code>. 
+        </p>
+    </div>
+
+
+
+    <!-- JavaScript -->
+
+    <div class="section">
+    <h2>JavaScript</h2>
+
+    <ul>
+
+    <li>JS File Location</li>
+    <li>JS Objects and Properties</li>
+    <li>Loggin tools: <code>alert</code> and <code>console.log()</code> function</li>
+    
+    <li>Window Object</li>  
+
+    <li>Document Object Model (DOM)
+        <ul>
+            <li>Tree structure</li>
+            <li>Searching and selecting: traditional vs modern selectors </li>
+            
+        </ul>
+    </li>
+
+    <li>Hoising variables and function.</li>
+
+    <li>Language Fundamentals
+        <ul>
+            <li>Variable declaration: <code>const</code>, <code>var</code>, and <code>let</code></li>
+            <li>Local and global scope</li>
+            <li>Strings and string functions</li>
+            <li>Conditional statements</li>
+            <li>Comparison and logical operators</li>
+            <li>Loops and array structures</li>
+            <li>Dynamic content</li>
+            <li>Add classes to content dynamically created</li>
+            <li>Styling HTML elements, programmatically.</li>
+        </ul>
+    </li>
+    
+    <li>Functions</li>
+    <p>Declaration</p>
+    <p>Implementation of anonymous functions</p>
+    <p>Implementation of Immediately Invoked Function Expression (IIFE) functions</p>
+    <p>Conversion of traditional and arrow function  to IIFE functions.</p>
+
+    <li>JavaScript Events</li>
+    <p>Add event listeners (e.g. click events)</p>
+    <p>Disable clickable elements</p>
+    <p>Click simulations.</p>
+       
+
+    <li>Basic asynchronous functions: (e.g. <code>setTimeout()</code>, etc... )</li>
+
+    <li>Promises</li>
+    <p>Explain the concept of a promise in JS</p>
+    <p>Implement and handle promises</p>
+    <p>Make sure to understand how to handle errors with promises.</p>
+
+
+    <li>The Fetch API</li>
+    <p>Implement and handle a promise with the FecthAPI.</p>
+    <p>Read data from a JSON file </p>
+    <p>Read data from a text file </p>
+    <p>Read data from an API </p>
+    <p>Make sure to understand how to handle network errors.</p>
+    <p>Make sure to understand how to handle http status error codes.</p>
+
+
+    <li>Async / Await</li>
+    <p>Implement <code>async</code> functions </p>
+    <p>Handle responses from <code>await</code> function calls </p>
+    <p>Make sure to understand how to handle errors in <code>async</code> functions.</p>
+    <p>Explain the difference between <code>Promise.all()</code> function and <code>Promise.allSettled()</code> function </p>
+
+
+    <li>APIs</li>
+    <p>Make HTTP requests to public APIs.</p>
+    <p>Explain the different levels of API security.</p>
+    <p>Explain the difference between authentication and authorization.</p>
+    
+</ul>
+
+    <div class="subtopic">Sample Exercises: </div>
+        <p style="padding-left: 40px;">
+            1. Given a starter JS file, add a <code>&lt;button&gt;</code> element dynamically as a child of the <code>&lt;article&gt;</code> element with the ID <code>container</code>. 
+            This button must include the attributes ID <code>log-in</code> and class <code>buttton-id</code>. The text value should be <code>Log in</code>. Lastly, attach an event listener to this element in order to
+            display the message "Redirecting user to the login page...", when it is clicked.
+
+            <br>
+            <br>
+            
+            2. Given a starter JS function, convert it to an asynchronous and IIFE function.
+
+        </p>
+      
+
+    </div>
+
+
+    <!-- Other Concepts -->
+
+    <div class="section">
+    <h2>Other Concepts and Tools</h2>
+
+    <ul>
+
+    <li>How the web works? </li>
+    <p>Differences between DNS server and web server.</p>
+
+
+
+    <li>The HTTP Protocol </li>
+    <p>Explain the HTTP request-response cycle.</p>
+    <p>Identify the different HTTP status codes (e.g. 100. 200, 302, 404, 500..) </p>
+    <p>Identify the different and request methods (e.g. GET, PATCH, etc...) </p>
+
+
+
+    <li>Asynchronous </li>
+    <p>Explain the differences between synchronous and asynchronous code.</p>
+    <p>Describe how JS uses Web APIs to handle asynchronous operations.</p>
+    <p>Explain how the Web API handles and registers callbacks.</p>
+    <p>Explain how the Web API handles and registers promises.</p>
+    <p>Define the Task/Event Queue and explain its purpose.</p>
+    <p>Explain what the Call Stack is and how it is used when JS executes code.</p>
+    <p>Describe the role of the Event Loop.</p>
+
+    
+    <li>Git</li>
+    <p>Basic Git commands</p>
+    <p>Repository status commands (e.g. add, commit, etc... )</p>
+    <p>Local repository structure (three stages)</p>
+    <p>Uploading and downloading projects from/to GitHub</p>
+   
+
+    <li>JSON</li>
+    <p>Parse JSON objects</p>
+    <p>Conversion functions</p>
+        
+
+    <li>Browser tools: </li>
+    <p>Inspect</p>
+    <p>Console (specially useful for debugging JS code)</p>
+
+
+    
+
+    </ul>
+
+    </div>
+
+    </div>
+
+    <footer>
+        HTML • CSS • JavaScript • jQuery • APIs • Basic Networking
+    </footer>
+
+    </body>
+</html>
